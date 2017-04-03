@@ -1,0 +1,125 @@
+/* Main window properties */
+
+.container-main {
+    background-color: #5e5e5e;
+    background-image: url("../images/map.jpg");
+    height: 100vh;
+    width: 100vw;
+}
+/* Side panel properties */
+
+.container-list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: black;
+    height: 100vh;
+    width: 25%;
+    opacity: 0.9;
+    overflow: auto;
+}
+/* List of items properties */
+
+.list-group {
+    margin-top: 10%;
+}
+/* Active list item properties */
+
+.itemActive {
+    background-color: #d9534f;
+    color: #ffffff;
+}
+.p-bar {
+    position: fixed;
+    top: 40%;
+    right: 40%;
+    z-index: 1;
+}
+/* Show/hide side panel button properties */
+
+.menu-button {
+    display: inline;
+    margin-left: 0;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    position: fixed;
+    top: 0.5%;
+    left: 0.5%;
+    z-index: 20;
+    background-color: #d9534f;
+    color: #ffffff;
+    padding: 10px 15px;
+}
+/* Main title properties */
+
+.title {
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-size: 4ex;
+    font-weight: 100;
+    text-align: right;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+/* Filter textbox properties */
+
+.input-text {
+    width: 100%;
+}
+/* Map holder properties */
+
+#map {
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+}
+/* Marker's info window properties */
+
+.info-window-image {
+    float: left;
+    margin-right: 5px;
+}
+/* Marker's inner text properties */
+
+.info-window-text {
+    font-size: 16px;
+}
+.attr-message {
+    position: fixed;
+    right: 40px;
+    bottom: 4px;
+    background-color: #d9534f!important;
+    color: #ffffff!important;
+    z-index: 50;
+}
+/* ********************************************************************************************  */
+/* Main window width for smart-phones property */
+
+@media screen and (max-width: 768px) {
+    .container-list {
+        width: 80%;
+    }
+}
+/* Main window width for tablets property */
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .container-list {
+        width: 50%;
+    }
+}
+/* Main window width for regular desktops property */
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    .container-list {
+        width: 30%;
+    }
+}
+/* Main window width for large-screen desktops and TV's property */
+
+@media screen and (min-width: 1600px) {
+    .container-list {
+        width: 20%;
+    }
+}
