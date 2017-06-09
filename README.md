@@ -13,7 +13,7 @@ Google map with markers , locations list and filtering option
 * To filter the locations, start typying in the textbox on the top of the left panel
 * To hide/show the left panel, press on the small menu icon("hamburger")
 
-#### File structure:
+#### Project structure:
 * index.html - main html file
 * css - folder with css files
   * styles.css - customized responsive styles for application
